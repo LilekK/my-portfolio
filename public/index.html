@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div id="root"></div>
+
+
+<!-- React 18 UMD -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- Babel for JSX in the browser -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+<!-- Components (NO imports/exports). Each assigns to window.* -->
+<script type="text/babel" data-presets="react" src="./data/projects.js"></script>
+<script type="text/babel" data-presets="react" src="./components/Tag.jsx"></script>
+<script type="text/babel" data-presets="react" src="./components/ProjectCard.jsx"></script>
+<script type="text/babel" data-presets="react" src="./components/NavLink.jsx"></script>
+<script type="text/babel" data-presets="react" src="./components/Section.jsx"></script>
+<script type="text/babel" data-presets="react" src="./components/Header.jsx"></script>
+<script type="text/babel" data-presets="react" src="./components/Carousel.jsx"></script>
+<script type="text/babel" data-presets="react" src="./data/skills.js"></script>
+<script type="text/babel" data-presets="react" src="./components/Skills.jsx"></script>
+<script type="text/babel" data-presets="react" src="./App.jsx"></script>
+
+
+<!-- Bootstrap the app -->
+<script type="text/babel" data-presets="react">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(window.App));
+</script>
+</body>
+</html>

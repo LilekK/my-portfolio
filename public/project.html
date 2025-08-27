@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React + Babel -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- data + page component -->
+  <script type="text/babel" data-presets="react" src="./data/projects.js"></script>
+  <script type="text/babel" data-presets="react">
+    function useQuery() {
+      const [q] = React.useState(() => new URLSearchParams(window.location.search));
+      return q;
+    }
+    function ProjectPage() {
+    const q = new URLSearchParams(window.location.search);
+    const slug = q.get('slug');
+    const project = (window.projects || []).find(p => (p.slug || p.id) === slug);
+
+    if (!project) {
+        return (
+        <div className="container" style={{ padding: '3rem 1rem' }}>
+            <a className="back-btn" href="./index.html#projects">← Back</a>
+            <h1 style={{ marginTop: '1rem' }}>Project not found</h1>
+        </div>
+        );
+    }
+
+    return (
+        <div>
+        {/* Header with pretty back button */}
+        <header className="site-header">
+            <div className="container">
+            <a className="back-btn" href={`./index.html#projects`} aria-label="Back to projects">
+                <span className="back-chev" aria-hidden>←</span>
+                <span>Back to Projects</span>
+            </a>
+            </div>
+        </header>
+
+        <main className="container project">
+            <h1 className="section-title">{project.title}</h1>
+
+            <div className="project-main">
+            {/* LEFT: Main image */}
+            <figure className="project-hero">
+                <img src={project.image} alt={`${project.title} cover`} />
+            </figure>
+
+            {/* RIGHT: Description, summary, tech, links */}
+            <section className="project-details">
+                <h2 className="h3">Description</h2>
+                <p className="muted">{project.summary || '—'}</p>
+
+                {Array.isArray(project.bullets) && project.bullets.length > 0 && (
+                <ul className="project-bullets">
+                    {project.bullets.map((line, i) => (
+                    <li key={i}>{line}</li>
+                    ))}
+                </ul>
+                )}
+
+                {Array.isArray(project.tech) && project.tech.length > 0 && (
+                <>
+                    <h3 className="h4">Tech Used</h3>
+                    <div className="project-tech">
+                    {project.tech.map((t, i) => (
+                        <span key={i} className="tag">{t}</span>
+                    ))}
+                    </div>
+                </>
+                )}
+
+                {Array.isArray(project.links) && project.links.length > 0 && (
+                <div className="row gap project-links">
+                    {project.links.map(l => (
+                    <a key={l.href} className="btn btn-outline" href={l.href} target="_blank" rel="noopener">
+                        {l.label}
+                    </a>
+                    ))}
+                </div>
+                )}
+            </section>
+            </div>
+
+            {/* Optional gallery below */}
+            {Array.isArray(project.gallery) && project.gallery.length > 0 && (
+            <section className="project-gallery">
+                <div className="grid">
+                {project.gallery.map((src, i) => (
+                    <img key={i} src={src} alt={`${project.title} ${i + 1}`} className="card-media" />
+                ))}
+                </div>
+            </section>
+            )}
+        </main>
+        </div>
+    );
+    }
+
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(ProjectPage));
+  </script>
+</body>
+</html>
