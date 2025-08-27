@@ -95,8 +95,7 @@ window.App = function App() {
         </p>
 
         <div className="row gap">
-          <a className="btn" href="mailto:you@example.com">you@example.com</a>
-          <a className="btn btn-outline" href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+          <a className="btn" href="https://discord.com/users/626421334859055114">Discord: lilekk</a>
         </div>
       </Section>
       </main>
