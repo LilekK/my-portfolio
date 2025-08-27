@@ -28,7 +28,7 @@ window.App = function App() {
               <p className="eyebrow">WELCOME</p>
               <h1 className="section-title">Hi, I’m Peter aka LilekK</h1>
               <p className="lead">
-                Professional scripter with 5+ years of experience in the Roblox ecosystem. Specializing in gameplay
+                Professional scripter with 5+ years of experience in the Roblox ecosystem. Specializing in overall gameplay.
               </p>
               <div className="row gap">
                 <a className="btn" href="#projects">See my projects</a>
@@ -60,7 +60,7 @@ window.App = function App() {
 
           <p>
             My focus is building reliable, scalable systems using Roblox frameworks like 
-            <strong> Knit</strong>, <strong>ProfileService</strong>, and <strong>Fusion UI</strong>, 
+            <strong> Knit</strong>, <strong>ProfileService</strong>, and <strong>Fusion </strong>, 
             along with <strong>Rojo + VS Code integration</strong> for clean workflows. 
             I enjoy working on both <strong>backend systems</strong> (such as data saving and core gameplay logic) 
             and <strong>frontend experiences</strong> (like UI and player interaction) to create polished, seamless results.

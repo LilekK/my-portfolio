@@ -22,7 +22,7 @@ window.skills = {
     {
       title: 'RNG Crates / Loot',
       pill: 'Complete System',
-      summary: 'Weighted rarity tables with pity system and FX.',
+      summary: 'Simple RNG system, easily configurable via folder structure.',
       video: './videos/Crates.mp4'
     },
     {
@@ -40,25 +40,25 @@ window.skills = {
     {
       title: 'NPC Dialog System',
       pill: 'Complete System',
-      summary: 'Easily configurable via folder structure. Supports hooking different actions, like accept quest, open UI',
+      summary: 'Easily configurable via folder structure. Supports hooking different actions, like accept quest, open UI,...',
       video: './videos/Dialog.mp4'
     },
     {
       title: 'Interface Controller',
       pill: 'Frontend',
-      summary: 'Custom framework that allows communication between all UI elements in game -> no more overlapping UI, configurable effects',
+      summary: 'Custom framework that allows communication between all UI elements in game -> no more overlapping UI, configurable effects.',
       video: './videos/Interface.mp4'
     },
     {
       title: 'Fisch-like Catch gameplay loop',
       pill: 'Complete System',
-      summary: 'Catch butterfly -> win the mini-game -> Add to the inventory',
+      summary: 'Catch butterfly -> win the mini-game -> Add to the inventory.',
       video: './videos/CatchLoop.mp4'
     },
     {
       title: 'Pet(drone) System',
       pill: 'Complete System',
-      summary: 'Simple pet system where pets/drones follow or helping the player',
+      summary: 'Simple pet system where pets/drones follow or helping the player.',
       video: './videos/DroneSys.mp4'
     },
     {

@@ -37,7 +37,7 @@ window.projects = [
     accent2: '#7CFF9E',  // neon green from butterflies
 
     // detail page fields:
-    summary: 'My latest personal project, everything you see is made by me. Inspired by Fisch. Altough I have not done the best job with progression and economy balancing, I am proud of the scripting side of the project.',
+    summary: 'This is my latest personal project, designed and developed entirely by me, inspired by Fisch. The experience allowed me to explore key aspects of game design while focusing strongly on scripting and technical implementation, which I consider the highlight of the project. Although there is still room to refine progression and economy balancing, the project demonstrates my ability to take an idea from concept to a functional and engaging result.',
     bullets: [
       "Designed and implemented the core catching loop + minigame",
       "Built rarity/spawn system for creatures",
@@ -68,7 +68,7 @@ window.projects = [
     accent2: '#FF4DD8',  // neon magenta from arcade signs
 
     // detail page fields:
-    summary: 'My Second latest personal project, everything you see is made by me. Inspired by Laundry Simulator and Bakery Simulator',
+    summary: 'My Second latest personal project, everything you see is made by me. Inspired by Laundry Simulator and Bakery Simulator.',
     bullets: [
       "Designed and implemented the core gameplay loop of launching fireworks",
       "Plot assigning, Plot customization",
