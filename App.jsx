@@ -100,7 +100,7 @@ window.App = function App() {
       </Section>
       </main>
 
-      <footer className="footer">© {new Date().getFullYear()} Your Name</footer>
+      <footer className="footer">© {new Date().getFullYear()} LilekK </footer>
     </div>
   );
 };
