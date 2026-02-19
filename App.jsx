@@ -36,9 +36,9 @@ window.App = function App() {
               </div>
             </div>
 
-            <div className="media-frame hero-img">
+            {/* <div className="media-frame hero-img">
               <img src="./images/memyself.png" alt="Peter" />
-            </div>
+            </div> */}
           </div>
         </Section>
 
