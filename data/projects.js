@@ -7,7 +7,7 @@ window.projects = [
     tags: ['Lua', 'Luau', 'Roblox Studio'],
     years: '2023–2024',              // NEW
     badge: 'Gamefam',       // or company: 'Studio XYZ'
-    links: [{ label: 'Play on Roblox', href: 'https://www.roblox.com/games/13771684349/TMNT-Battle-Tycoon-2x-COINS' }],
+    links: [{ label: 'No Longer playable :(', href: 'https://www.roblox.com/games/13771684349/TMNT-Battle-Tycoon-2x-COINS' }],
     accent: '#4DE2FF',   // cool cyan from screens
     accent2: '#FF4DD8',  // neon magenta from arcade signs
 
@@ -81,4 +81,29 @@ window.projects = [
     tech: ['Luau', 'Roblox Studio', 'Blender'],
     gallery: [],
 },
+
+{
+    id: 'stealafirework',
+    title: 'Steal a Firework',
+    blurb: 'Steal fireworks, do fireworks shows.',
+    image: './images/StealAFirework.png',
+    tags: ['Lua', 'Luau', 'Blender', 'Roblox Studio'],
+    years: '2026',              // NEW
+    badge: 'Personal Project',       // or company: 'Studio XYZ'
+    links: [{ label: 'Play on Roblox', href: 'https://www.roblox.com/games/119198868711764/Steal-a-Firework' }],
+    accent: '#4DE2FF',   // cool cyan from screens
+    accent2: '#FF4DD8',  // neon magenta from arcade signs
+
+    // detail page fields:
+    summary: 'My latest personal project, everything you see is made by me. Inspired by Steal a Brainrot.',
+    bullets: [
+      "Designed and implemented the core gameplay loop",
+      "Plot assigning, Plot customization, stealing fireworks, firework launching",
+      "Custom weapon system with firework-themed weapons",
+    ],
+    responsibilities: ['Gameplay prototype', 'Spawn/rarity system', 'Custom weapon system', 'UI polish'],
+    tech: ['Luau', 'Roblox Studio', 'Blender'],
+    gallery: [],
+},
+
 ];
